@@ -5,4 +5,6 @@ from django.http import HttpResponse
 
 
 def mainpage_view(request, *args, **kwargs):
-    return render(request, "mainpage/mainpage.html", {})
+    print(args, kwargs)
+    print(request.user)
+    return render(request, "mainpage/mainpage.html" )
