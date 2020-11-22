@@ -3,7 +3,11 @@ import re
 
 
 def validate_box_size(value):
-
+    """
+    Validate Box Size
+    :param value: String Values
+    :return: ValidationError or None
+    """
     patterns = [r"\d+x\d+x\d+", r"\d+х\d+х\d+"]
     for pattern in patterns:
         find = re.search(pattern, value)

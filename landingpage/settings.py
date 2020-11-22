@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
+import cloudinary
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainpage',
     'products',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +103,11 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+cloudinary.config(
+  cloud_name="puchlayaclecka",
+  api_key="865689882399547",
+  api_secret="nArmm9dtqBZwlFNocHa3bZx9luc"
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
