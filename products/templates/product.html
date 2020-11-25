@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>{{ product.title }}</title>
+{% endblock %}
+
+{% block body %}
+    <div class="container mt-2">
+
+        <h3 class="product_title_detail">{{ product.title }}</h3>
+        <hr>
+        {{ product.price }}
+        <hr>
+        <img class="product_image_detail" src="{{ product.image.url }}">
+    </div>
+{% endblock %}

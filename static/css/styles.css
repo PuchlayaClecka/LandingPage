@@ -1,0 +1,38 @@
+.navbar {
+    background-color: #ffffff;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid darkgrey;
+    padding: 16px;
+    height: 270px;
+    width: 250px;
+}
+
+.product:hover {
+    border: 2px solid darkgrey;
+}
+
+.products {
+    display: inline;
+}
+
+.product_image {
+    max-width: 100%;
+}
+
+.product_title_detail {
+
+}
+
+.product_image_detail {
+    border-radius: 0.5em;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+
+.hr {
+    color: darkgrey;
+}

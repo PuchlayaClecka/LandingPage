@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Игрушки</title>
+
+{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="products col-md-8 d-inline-flex">
+            {% for product in products %}
+            <a href="{{ product.get_absolute_url }}">
+            <div class="product m-2 rounded">
+                {{ product.title }}
+                <hr class="line">
+                <img class="product_image" src="{{ product.image.url }}">
+                <hr class="line">
+                {{ product.price }} руб.
+            </div>
+            </a>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock %}
